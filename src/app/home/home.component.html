@@ -1,0 +1,516 @@
+<div class="home-wrapper">
+    <img class="image-wrapper" src="../assets/home/burger.jpeg" alt="">
+ <!-- <img src="../assets/home/bot-stroke.png" class="stroke-image-bot-top mb-5" alt=""> -->
+    <div class="content">
+<h5 class="title-down">new in menu <small class="empty"></small></h5>
+<h1 class="title title-wrap">Double  </h1>
+<h1 class="title title-wrap">Mushroom</h1>
+<h1 class="title title-wrap">burger</h1>
+<div class="card top-card mt-3" >
+    <div class="row p-2" >
+        <div class="col-4 col-lg-2 col-md-2 col-sm-4 " style="text-align: end;">
+            <small class="empty-wrap"></small>
+            <small class="head-one">Bacan</small>
+        </div>
+        <div class="col-4 col-lg-2 col-md-2 col-sm-4" style="text-align: end;">
+            <small class="empty-wrap"></small>
+            <small class="head-one">Cheese</small>
+        </div>
+        <div class="col-4 col-lg-3 col-md-3 col-sm-4" style="text-align: end;">
+            <small class="empty-wrap"></small>
+            <small class="head-one">Mushroom</small>
+        </div>
+        <div class="col-10 col-lg-4 col-md-4 col-sm-6 pt-2">
+            <small class="text ">Only</small><br>
+            <small class="head-two">$15.00</small>
+        </div>
+        <div class="col-2 col-lg-1 col-md-1 col-sm-4">
+            <small class="plus-cont">+</small>
+        </div>
+    </div>
+</div>
+<div class="div-wrapper pt-5">
+<small>
+    <small  class="pages">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" weight="700" fill="white" class="bi bi-chevron-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+          </svg>
+    </small>
+    <small class="page-one">01/</small>
+    <small class="page-three" style="color:white ;">03</small>
+    <small>
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" weight="700" fill="white" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+    </small>
+</small>
+</div>
+</div>
+<div class="line-top-wrap"></div>
+<div class="second-wrapper">
+<img class="img-sec-wrapper-one" src="../assets/home/burger-side.jpg" alt="" >
+<img class="img-sec-wrapper-two" src="../assets/home/cooldrings.png" alt="" >
+<div class="content-two">
+<h5 class="title wel-title">Welcome</h5>
+<h1 class="title sec-title">We make the best Burger in Town</h1>
+<p class="sec-text text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati quas sint cum aperiam eligendi mollitia? Expedita doloribus sint veniam consequatur?</p>
+<br>
+<a class="btn text-white" style="background-color: red;"  role="button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" style="line-height: 4.2rem;" class="bi bi-people-fill" viewBox="0 0 16 16">
+        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+      </svg>&nbsp;
+      <small>More about Us</small>
+  </a>
+</div>
+<div class="cen-content mt-5">
+    <div class="mid-content">
+    <h5 class="title wel-title">Special Combo</h5>
+    <h1 class="title sec-title">Our delicious</h1>
+    <h1 class="title sec-title">burgers</h1>
+    </div>
+  </div>
+</div>
+<img src="../assets/home/patten.jpg" class="valut-patten" alt="" >
+<div class="spec-det">
+  <small class="left-shift-back" >
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-chevron-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+    </svg>
+</small>
+<div class="multi-cards">
+ <div class="row m-0 pt-4 pb-4 multi-card-w " >
+    <div class="col-12 ">
+        <div class="row">
+            <div class="col-3"*ngFor=" let item of order;let i=index">
+                <div class="card card-content" >
+                    <div class="card-body">
+                       <h4 class="card-title">{{item.title}}</h4>
+                       <small class="card-text text-muted ">{{item.text1}}</small><br>
+                       <small class="card-text text-muted">{{item.text2}}</small>
+                       <h4 class="card-title pt-3 pb-3">${{item.price}}</h4>
+                       <a class="btn text-danger" style="background-color: white;"  role="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" hight="14px" width="14px" fill="red">
+                          <path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                           </svg>
+                        Order Now
+                      </a>
+                      <br><br>
+                       <img src="{{item.src}}" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+</div>
+ <small class="right-shift-back" style="text-align: end;">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-chevron-right" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+  </svg>
+</small>
+</div>
+<img src="../assets/home/top-stroke.png" class="stroke-image-top mt-5" alt="">
+ <img src="../assets/home/back.jpeg" class="list-image" alt="" >
+ <img src="../assets/home/bot-stroke.png" class="stroke-image-bot mb-5" alt="">
+ <div class="list-container">
+    <div class="list-item-container" style="text-align: center;">
+        <h5 class="title wel-title">Ingredient</h5>
+        <h1 class="title li-title">Baked with Natural</h1>
+        <h1 class="title li-title">Ingredient</h1>
+    </div>
+    <div class="burger-mark mt-5 mb-4">
+        <div class="row m-0 ">
+            <div class="col-4 col-lg-3 col-md-3 col-sm-4 ">
+                <small class="w-head">Fresh</small> <small class="r-head"> Bread</small>
+                <small class="dot-r"></small>
+                <small class="line-one"></small>
+                <small class="line-end-dot"></small>
+                <br>
+                <small class="w-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, maxime.</small><br><br>
+                <small class="w-head">Lettuce</small><small class="r-head"> Leaf</small>
+                <small class="dot-r"></small>
+                <small class="line-two"></small>
+                <small class="line-end-dot-two"></small>
+                <br>
+                <small class="w-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, nihil.</small><br><br>
+                <small class="w-head">Glow</small> <small class="r-head"> Cheese</small>
+                <small class="dot-r"></small>
+                <small class="line-three"></small>
+                <small class="line-end-dot-three"></small>
+                <br>
+                <small class="w-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, quia?</small>
+            </div>
+            <div class="col-4 col-lg-6 col-md-6 col-sm-4" style="margin: auto;">
+                <img src="../assets/home/burger1.png" width="440px" class="list-burger-image" alt="" >
+            </div>
+            <div class="col-4 col-lg-3 col-md-3 col-sm-4" style="text-align: end;">
+                <small class="l-line-end-dot"></small>
+                <small class="l-line-one"></small>
+                <small class="dot-l"></small>
+                <small class="w-head">Mild</small> <small class="r-head"> Butter</small><br>
+                <small class="w-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, maxime.</small><br><br>
+                <small class="l-line-mid-dot"></small>
+                <small class="l-line-two"></small>
+                <small class="dot-l"></small>
+                <small class="w-head">Sleek</small><small class="r-head"> Onion</small><br>
+                <small class="w-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, nihil.</small><br><br>
+                <small class="l-line-three-dot"></small>
+                <small class="l-line-three"></small>
+                <small class="dot-l"></small>
+                <small class="w-head">Slices</small> <small class="r-head"> Beef</small><br>
+                <small class="w-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, quia?</small>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="menu-items">
+<div class="top-menu-items mt-5" style="text-align: center;">
+    <h5 class="title wel-title">Menu</h5>
+    <h1 class="title sec-title">Choose your combo</h1>
+    <h1 class="title sec-title">& order now</h1>
+    <ul class="list-group list-group-horizontal m-items" style="text-align: center;">
+        <li class="list-group-item w-items">
+            <img src="../assets/home/menu/burger.png" class="menu-images" alt="" >
+            <h5 class="title-menu">Burger</h5>
+        </li>
+        <li class="list-group-item w-items">
+            <img src="../assets/home/menu/pizza.png" class="menu-images" alt="" >
+            <h5 class="title-menu">Pizzas</h5>
+        </li>
+        <li class="list-group-item w-items">
+            <img src="../assets/home/menu/chicken.png" class="menu-images" alt="" >
+            <h5 class="title-menu">Chicken</h5>
+        </li>
+        <li class="list-group-item w-items">
+            <img src="../assets/home/menu/ice.png" class="menu-images" alt="" >
+            <h5 class="title-menu">Beverages</h5>
+        </li>
+        <li class="list-group-item w-items">
+            <img src="../assets/home/menu/coffe.png" class="menu-images" alt="" >
+            <h5 class="title-menu">Coffe</h5>
+        </li>
+      </ul>
+      <hr class="h-menu">
+</div>
+<div class="menu-list mt-5">
+    <div class="row m-0" >
+        <div class="col-sm-6" *ngFor="let item of menu_item;let i=index">
+            <small class="menu-top" *ngIf="item.flag==='true'">{{item.top}}</small><br>
+            <div class="row">
+                <div class="col-10 ">
+                    <small class="menu-line-wrap"></small><br>
+                    <small class="menu-title-wrap">{{item.title}}</small>
+                <p class="menu-text pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto repudiandae quo explicabo assumenda a quia totam at consectetur temporibus!</p>
+                </div>
+                <div class="col-2">
+                    <small class="menu-price">${{item.price}}</small><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row m-0">
+        <div class="col-md-6">
+            <div class="card m-2 menu-md-lg-card" style="background-color: #f78c34;border: none;">
+                <div class="card-body">
+                    <div class="card-contents">
+                        <div class="row">
+                            <div class="col-7 p-4 card-first-content">
+                                <h5 class="card-title-wrap">This Month Special</h5>
+                                <h4 class="card-title-wrap-title pb-4">The Japaneese Oishili Burger</h4>
+                                <small class="card-title-wrap order-wrap">Order Now</small>&nbsp;&nbsp;
+                                <small><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                  </svg></small>
+                            </div>
+                            <div class="col-5">
+                                <small class="card-a-wrap">$12</small><br>
+                                <img src="../assets/home/card/card-burger.png" class="card-image-top-1" alt="" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card m-2 menu-md-lg-card" style="background-color: #a19c54;border: none;">
+                <div class="card-body">
+                    <div class="card-contents">
+                        <div class="row">
+                            <div class="col-6 p-4">
+                                <h5 class="card-title-wrap">Festival Special</h5>
+                                <h4 class="card-title-wrap-title pb-4">Burger with Benifits</h4>
+                                <small class="card-title-wrap order-wrap">Order Now</small>&nbsp;&nbsp;
+                                <small><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                  </svg></small>
+                            </div>
+                            <div class="col-6">
+                                <div class="div-price" >
+                                    <small class="icons-wrap">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                                          </svg>
+                                    </small>
+                                    <p class="text-wrap-icons">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                          </svg>
+                                        </p>
+                                    <small class="text-wrap-b">FROM</small>
+                                    <h4 class="text-wrap-price">$15.99</h4>
+
+                                </div>
+                                <img src="../assets/home/card/card-burger2.png" class="card-image-top-2 " alt="" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row p-2 m-0">
+        <div class="col-12 col-lg-4 col-md-6 col-sm-12 pt-3 pb-3">
+            <div class="card c-bod" style="background-color: red;">
+                <div class="card-body">
+                    <div class="card-contents">
+                    <div class="row">
+                        <div class="col-6">
+                            <h5 class="card-title-wrap">Offer</h5>
+                                <h4 class="card-title-wrap-title pb-4">Fatboy Combo</h4>
+                                <small class="order-wrap-o">Order Now</small>&nbsp;&nbsp;
+                                <small><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="orange" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                  </svg></small>
+                        </div>
+                        <div class="col-6">
+                            <div class="div-price-two" >
+                                <small class="icons-wrap">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="white" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                                      </svg>
+                                </small>
+                                <p class="text-wrap-icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                      </svg>
+                                    </p>
+
+                                <small class="text-wrap-box">OFF</small>
+                                <h4 class="text-wrap-price-two">60%</h4>
+                            </div>
+                            <img src="../assets/home/card/card-burger.png" class="card-image-1 " alt="" width="100px" style="margin-top: 31px;">
+                            <small class="card-a-wrap-bot">$12</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 col-sm-12 pt-3 pb-3">
+            <div class="card c-bod" style="background-color:black;">
+                <div class="card-body">
+                    <div class="card-contents">
+                    <div class="row">
+                        <div class="col-6">
+                            <small class="doller-sign">$</small>
+                            <h1 class="p-two">2</h1>
+                            <h5 class="title-track black-b mt-4">AllDay Every Day</h5><br>
+                            <small class="order-wrap-o">Order Now</small>&nbsp;&nbsp;
+                            <small><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="orange" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                              </svg></small>
+                        </div>
+                        <div class="col-6 mt-4">
+                            <small class="card-image-back">
+                            <img src="../assets/home/card/card-burger.png" class="card-image-2" alt="" >
+                        </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 col-sm-12 pt-3 pb-3">
+            <div class="card c-bod  " >
+                <img src="../assets/home/burger-d.jpg" class="card-img-container" alt="" width="100%">
+                <div class="round-container" >
+                    <h5 class="round-top ">10 Beef burger</h5>
+                    <h5 class="round-mid">20</h5><br>
+                    <h5 class="round-bot">Limited Time Offer</h5>
+                </div>
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ </div>
+ <div class="delivery-container">
+  <img src="../assets/home/sandle.jpg" alt=""  class="deli-image-wrapper">
+<div class="del-contents">
+  <div class="row m-0">
+    <div class="col-12 col-lg--4 col-md-4 col-sm-12">
+      <h5 class="del-title">
+        Delivery
+      </h5>
+      <h1 class="del-b-title del-one">Choose what you want, select a pick up time</h1>
+      <p class="text-muted mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error itaque atque recusandae quis sed autem unde mollitia, quasi quas velit?</p>
+      <a class="btn del-btn text-white mt-3" style="background-color: red;"  role="button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" hight="18px" width="18px" fill="white">
+          <path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+      </svg>
+         Order Online
+      </a>
+    </div>
+    <div class="col-12 col-lg--4 col-md-4 col-sm-12">
+      <img src="../assets/home/delivery.jpg" class="del-image" alt="" width="100%">
+    </div>
+    <div class="col-12 col-lg--4 col-md-4 col-sm-12" style="text-align: end;">
+      <h5 class="del-title">
+        Reward
+      </h5>
+      <h1 class="del-b-title del-two">Earn points every time you order online</h1>
+      <p class="text-muted mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error itaque atque recusandae quis sed autem unde mollitia, quasi quas velit?</p>
+      <a class="btn del-btn text-white mt-3" style="background-color: red;"  role="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+        </svg>
+         Learn More
+      </a>
+    </div>
+  </div>
+</div>
+<div class="del-wrap-image" style="text-align: end;">
+  <img src="../assets/home/card/card-burger.png" class="img-del" alt="" >
+</div>
+ </div>
+<div class="review-container ">
+<div class="review-head" style="text-align: center;">
+  <h5 class="r-head-sm">Testimonial</h5>
+  <h1 class="r-head-title">Cients Review</h1>
+</div>
+<div class="row m-0">
+  <div class="col-12 col-lg-6 col-md-12 col-sm-12 ">
+    <div class="row">
+      <div class="col-7">
+        <div class="review-image" style="text-align: end;" >
+        <img src="../assets/home/dotted.png" alt="" width="50%">
+      </div>
+      <div class="r-back-container"></div>
+      </div>
+      <div class="col-5">
+        <div class="review-image" style="text-align: end;" >
+          <img src="../assets/home/custom.jpg" alt="" class="review-image-wrap" >
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+    <div class="row mt-5">
+      <div class="col-12 col-lg-6 col-md-8 col-sm-12">
+        <small>
+          <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" fill="#e3e3e3" class="bi bi-quote" viewBox="0 0 16 16">
+            <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+          </svg>
+        </small>
+        <h4 class="text-heads">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi eum sit sed, quas dicta non maxime voluptate fuga minima cumque.</h4>
+        <small class="tite-bottom">Nina Margaret</small> <small class="sm-line"></small>
+        <p class="text-muted text-mute-bot">CEO.Apple</p><br><br>
+        <small class="r-dot"></small>
+        <small class="dot-g"></small>
+        <small class="dot-g"></small>
+        <small class="dot-g"></small>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="making-video-container ">
+  <img src="../assets/home/make.jpg" alt="" width="100%">
+  <div class="video-icons" style="text-align: center;">
+    <small class="video-icon">
+      <svg xmlns="http://www.w3.org/2000/svg"  fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+      </svg>
+    </small>
+  </div>
+</div>
+<div class="gallery-container mt-4">
+  <div class="gal-head" style="text-align: center;">
+    <h5 class="wel-title">Gallery</h5>
+    <h1 class="sec-title">Burger Gallery</h1>
+  </div>
+  <div class="gal-contents mt-3 mb-3">
+    <div class="row m-0">
+      <div class="col-3">
+        <img src="../assets/home/gal/burger1.jpg" alt="" class="gal-image-sm left-top-gal">
+        <div class="dot-gal-one">
+          <img src="../assets/home/dotted.png" alt="" class="dot-image-gal">
+        </div>
+      </div>
+      <div class="col-3">
+        <img src="../assets/home/gal/burger2.jpeg" alt="" class="gal-image"><br>
+        <img src="../assets/home/gal/burger3.jpeg" alt="" class="gal-image-sm">
+      </div>
+      <div class="col-3">
+        <img src="../assets/home/gal/burger4.jpg" alt="" class="gal-image-sm mid-gal"><br>
+        <img src="../assets/home/gal/burger5.jpeg" alt="" class="gal-image">
+      </div>
+      <div class="col-3">
+        <img src="../assets/home/gal/burger6.jpeg" alt="" class="gal-image right-top-gal">
+        <div class="dot-gal-two">
+          <img src="../assets/home/dotted.png" alt="" class="dot-image-gal">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<img src="../assets/home/patten3.png" class="news-burger-image-back mt-5" width="100%" alt="">
+<div class="news-container ">
+  <div class="gal-head news-head-contain  mb-5" style="text-align: center;">
+    <h5 class="wel-title">News</h5>
+    <h1 class="sec-title">This is all about</h1>
+    <h1 class="sec-title">burger</h1>
+  </div>
+  <div class="news-head-contain">
+    <div class="row m-0">
+      <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 mt-5 " *ngFor="let item of news_card;let i=index">
+        <div class="card card-news-bot" style="border: none;">
+          <img class="card-img-top" src="{{item.path}}"  alt="Card image cap">
+          <div class="card-body">
+            <div class="row mb-4">
+              <div class="col-5">
+                <small style="color: red;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                  </svg>&nbsp; <small>WPTWUSER</small>
+                </small>
+              </div>
+              <div class="col-7">
+                <small style="color: red;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-clock" viewBox="0 0 16 16">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                  </svg>&nbsp;
+                  <small>10, OCTOBER, 2019</small>
+                </small>
+              </div>
+            </div>
+            <h5 class="card-title">{{item.title}}</h5>
+            <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, est.</p>
+            <small class="card-bot-text">READ MORE
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+              </svg>
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<img src="../assets/home/top-stroke.png" class="stroke-image-top-foot " alt="">
+</div>

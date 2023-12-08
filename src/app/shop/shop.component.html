@@ -1,0 +1,123 @@
+<div class="shop-container">
+<div class="head-container">
+  <div class="row m-0">
+    <h1 class="title-head">Explore Your Shoes</h1>
+    <div class="col-6">
+      <p class=" text-white">Get the best deal on your favorite shoes.</p>
+    </div>
+    <div class="col-6" style="text-align: end;">
+      <span>
+      <p class=" text-white">Total Product <small class="text-y">246 Items</small></p>
+    </span>
+    <span>
+      <a class="btn text-white top-btn " type="a"  >
+        Relevance
+        &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+          <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+        </svg>
+      </a>
+      </span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="menu-div ">
+      <small class="menu-bar open" (click)="open()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+      </small>
+    </div>
+    <div class="col-0 col-lg-3 col-md-3 col-sm-0 sidenav-bar  " >
+      <div class="card-b mt-4"  *ngIf="clicked===true">
+        <small class=" cancel" style="text-align: end;" *ngIf="clicked===true" (click)="cancel()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </small>
+      <div class="row " >
+        <div class=" col-12">
+          <h6 class="title-text">
+            Gender
+          </h6>
+          <h6 class="title-text" style="text-align: end;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-dash-lg" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
+            </svg>
+          </h6>
+          <div class="catlog mt-3 mb-3">
+          <input type="checkbox"  class="form-check-cus " id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Mens </label><br>
+          <input type="checkbox" class="form-check-cus" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Womens</label><br>
+          <input type="checkbox" class="form-check-cus" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Kids</label><br>
+          <input type="checkbox" class="form-check-cus" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Unisex</label>
+        </div>
+        </div>
+        <div class=" col-12">
+          <h6 class="title-text mt-3">
+            Shoes Style
+          </h6>
+          <h6 class="title-text" style="text-align: end;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-dash-lg" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
+            </svg>
+          </h6>
+          <div class="catlog-style mt-2 mb-3">
+            <input type="checkbox"  class="form-check-cus" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">High top </label><br>
+            <input type="checkbox"  class="form-check-cus" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Low top  </label><br>
+            <input type="checkbox"  class="form-check-cus" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Slip on </label><br>
+            </div>
+        </div>
+        <div class=" col-12">
+          <h6 class="title-text mt-3">
+            Shoe Size
+          </h6>
+          <h6 class="title-text" style="text-align: end;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+            </svg>
+          </h6>
+        </div>
+        <div class=" col-12">
+          <h6 class="title-text mt-3">
+            Shoe color
+          </h6>
+          <h6 class="title-text" style="text-align: end;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+            </svg>
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="col-12 col-lg-9 col-md-9 col-sm-12 main-bar">
+      <div class="row">
+        <div class="col-12 col-lg-4 col-xl-4 col-xxl-3 col-md-6 col-sm-6 mt-4" *ngFor="let item of items;let i=index">
+          <div class="card box">
+            <img src="{{item.path}}" alt="" class="card-img-top">
+            <div class="card-body">
+              <small class="text">Lorem, ipsum dolor.</small>
+              <div class="card-div mt-3">
+                <span class="sm-span">
+                  <h4 class="sm-title">$350</h4>
+                </span>
+                <span class="sm-d-span">
+                  <a class="btn btn-dark" type="a"  >
+                    Add to cart
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
